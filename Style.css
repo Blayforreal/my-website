@@ -1,0 +1,187 @@
+/* ===============================
+   🌐 Base Styles & Theme Variables
+================================== */
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --accent: #ff5722;
+  --dark-bg: #121212;
+  --dark-text: #f0f0f0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* ===============================
+   🚀 Navbar
+================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===============================
+   🏠 Hero Section
+================================== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, var(--accent), #ff8a00);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* ===============================
+   📰 Newsletter Section
+================================== */
+.newsletter {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===============================
+   ✍️ Blog Page
+================================== */
+.blog-intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.post h3 {
+  margin-top: 0;
+}
+
+.post p {
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   🖼️ Gallery Page
+================================== */
+.gallery-intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ===============================
+   📬 Contact Page
+================================== */
+.contact-intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===============================
+   👤 About Page
+================================== */
+.about-intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.about-details {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
